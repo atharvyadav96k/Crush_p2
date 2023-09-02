@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: #591584;
+    /* background-image: url(love3.jpg); */
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+}
+#main-lamp{
+    width: 802px;
+    height: 600px;
+    /* background-color: red; */
+    margin: auto;
+    background-image: url(dark.png);
+    background-size: cover;
+    margin-top: 0px;
+}
+#LoveYou{
+    position: absolute;
+    font: caption;
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 3px 3px 10px red;
+    z-index: 1;
+}
+@keyframes message {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.message_animation{
+    animation-name: message;
+    animation-duration: 3s;
+}
+.message_vis{
+    backdrop-filter: blur(100px); /* Adjust the blur radius as needed */
+    color: transparent;
+    opacity: 0.05;
+}
+.white{
+    color: transparent;
+    -webkit-text-stroke: red 1px;
+}
+.red{
+    color: transparent;
+    -webkit-text-stroke: red 1px
+}
+#string {
+    width: 5px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    align-items: end;
+    box-shadow:  10px 0px 30px 1px rgb(0, 0, 0);
+}
+
+#string_boll {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    box-shadow:  10px 0px 30px 1px rgb(0, 0, 0);
+    border-radius: 50%;
+    transform: translate(-7px, 10px);
+}
